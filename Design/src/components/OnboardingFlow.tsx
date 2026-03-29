@@ -955,6 +955,7 @@ export default function OnboardingFlow({ stage }: OnboardingFlowProps) {
 
   return (
     <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100svh", minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden", pointerEvents: "none" }}>
+      {stage === "orbital" && <div className="hero-plasma-border-screen" />}
       {/* Spline 3D orb — full viewport, transparent bg, global cursor tracking */}
       {stage === "orbital" && (
         <SplineOrb
@@ -1009,7 +1010,6 @@ export default function OnboardingFlow({ stage }: OnboardingFlowProps) {
               marginTop: isMobile ? 0 : `${heroLayout.containerOffsetY}px`,
             }}
           >
-            <div className="hero-plasma-frame" />
             {isMobile && (
               <div
                 style={{

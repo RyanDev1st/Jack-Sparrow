@@ -342,7 +342,7 @@ export default function MapSetWorkbench({
   };
 
   return (
-    <div className="grid gap-4 lg:grid-cols-[minmax(0,1.2fr)_minmax(340px,0.9fr)]">
+    <div className="grid gap-4 xl:grid-cols-[minmax(0,1.14fr)_minmax(400px,0.96fr)]">
       <div className="space-y-3">
         <div className="grid gap-2 sm:grid-cols-2">
           {showNameField && (
@@ -361,7 +361,7 @@ export default function MapSetWorkbench({
           />
         </div>
 
-        <div className="relative overflow-hidden rounded-[24px] border border-white/12 bg-[#020611]/76">
+        <div className="relative overflow-hidden rounded-[26px] border border-white/12 bg-[linear-gradient(180deg,rgba(8,15,31,0.9),rgba(2,6,17,0.96))] shadow-[0_20px_60px_rgba(0,0,0,0.3)]">
           {fileDataUrl ? (
             <>
               <div ref={containerRef} className="relative h-[24rem] w-full sm:h-[32rem]">
@@ -432,16 +432,29 @@ export default function MapSetWorkbench({
         </div>
 
         <div className="flex flex-wrap gap-2">
-          <BreathButton onClick={() => addZone('circle')} className="text-xs">ADD CIRCLE ZONE</BreathButton>
-          <BreathButton onClick={() => addZone('oval')} className="text-xs">ADD OVAL ZONE</BreathButton>
+          <BreathButton onClick={() => addZone('circle')} className="text-xs">ADD CIRCLE</BreathButton>
+          <BreathButton onClick={() => addZone('oval')} className="text-xs">ADD OVAL</BreathButton>
           <BreathButton onClick={deleteSelectedZone} className="text-xs">DELETE ZONE</BreathButton>
         </div>
       </div>
 
-      <div className="space-y-3 rounded-[24px] border border-white/12 bg-[#09142a]/70 p-4">
+      <div className="space-y-3 rounded-[26px] border border-white/12 bg-[linear-gradient(180deg,rgba(9,20,42,0.82),rgba(4,8,18,0.96))] p-4 shadow-[0_20px_60px_rgba(0,0,0,0.34)]">
+        <div className="flex items-start justify-between gap-3 rounded-[22px] border border-white/10 bg-white/[0.03] px-4 py-3">
+          <div>
+            <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Code Studio</p>
+            <h3 className="mt-1 font-display text-[1.1rem] font-semibold tracking-[-0.04em] text-white">Location composer</h3>
+          </div>
+          <div className="rounded-full border border-white/10 bg-[#020611]/56 px-3 py-1 text-[10px] uppercase tracking-[0.2em] text-white/46">
+            {selectedZone ? `${zoneLocations.length} entries / ${routeSets.length} sets` : 'select zone'}
+          </div>
+        </div>
+
         <div className="grid gap-3 xl:grid-cols-[minmax(0,0.92fr)_minmax(0,1.08fr)]">
-          <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-3">
-            <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Zones</p>
+          <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-3.5">
+            <div className="flex items-center justify-between gap-2">
+              <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Zones</p>
+              <span className="text-[10px] uppercase tracking-[0.2em] text-white/34">pick one</span>
+            </div>
             <div className="mt-3 flex flex-wrap gap-2">
             {zones.map((zone, index) => (
               <button
@@ -452,10 +465,10 @@ export default function MapSetWorkbench({
                   setSelectedLocationId(getZoneLocations(zone)[0]?.id ?? '');
                   setSelectedRouteSetId(getZoneRouteSets(zone)[0]?.id ?? '');
                 }}
-                className={`rounded-full border px-3 py-1.5 text-xs uppercase tracking-[0.16em] ${
+                className={`rounded-full border px-3 py-2 text-xs uppercase tracking-[0.16em] transition ${
                   zone.id === selectedZoneId
-                    ? 'border-orange-300/50 bg-orange-500/12 text-orange-100'
-                    : 'border-white/10 bg-white/[0.03] text-white/56'
+                    ? 'border-orange-300/50 bg-orange-500/12 text-orange-100 shadow-[0_0_18px_rgba(245,130,32,0.1)]'
+                    : 'border-white/10 bg-[#020611]/48 text-white/56 hover:border-white/18'
                 }`}
               >
                 {index + 1}. {zone.name}
@@ -465,7 +478,7 @@ export default function MapSetWorkbench({
           </div>
 
           {selectedZone ? (
-            <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-3 space-y-3">
+            <div className="rounded-[20px] border border-white/10 bg-white/[0.03] p-3.5 space-y-3">
               <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Zone Geometry</p>
               <input
                 value={selectedZone.name}
@@ -507,111 +520,160 @@ export default function MapSetWorkbench({
         </div>
 
         {selectedZone ? (
-          <div className="grid gap-3 xl:grid-cols-[minmax(0,0.8fr)_minmax(0,1.1fr)_minmax(0,0.9fr)]">
-            <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-3 space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Location Entries</p>
+          <div className="space-y-3">
+            <div className="rounded-[22px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04),rgba(255,255,255,0.02))] p-3.5">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Location Codes</p>
+                  <p className="mt-1 text-sm text-white/42">Build the QR entries for this zone here.</p>
+                </div>
                 <BreathButton onClick={addLocation} className="px-3 py-1.5 text-[10px]">ADD ENTRY</BreathButton>
               </div>
-              <div className="grid gap-2">
-                {zoneLocations.map((location, index) => (
-                  <div
-                    key={location.id}
-                    className={`flex items-center justify-between gap-2 rounded-xl border px-3 py-2 ${
-                      location.id === selectedLocation?.id
-                        ? 'border-orange-300/45 bg-orange-500/12 text-orange-100'
-                        : 'border-white/10 bg-white/[0.03] text-white/70'
-                    }`}
-                  >
-                    <button
-                      type="button"
-                      onClick={() => setSelectedLocationId(location.id)}
-                      className="min-w-0 flex-1 text-left"
-                    >
-                      <p className="text-[10px] uppercase tracking-[0.16em] text-white/38">Entry {index + 1}</p>
-                      <p className="truncate text-sm font-semibold">{location.name}</p>
-                    </button>
-                    <button
-                      type="button"
-                      onClick={(event) => {
-                        event.stopPropagation();
-                        deleteLocation(location.id);
-                      }}
-                      className="rounded-lg border border-white/10 bg-[#020611]/72 p-2 text-white/56 transition hover:border-orange-300/35 hover:text-orange-100"
-                      aria-label={`Delete ${location.name}`}
-                    >
-                      <Trash2 size={14} />
-                    </button>
+
+              <div className="mt-4 grid gap-3 xl:grid-cols-[minmax(220px,0.72fr)_minmax(0,1.28fr)]">
+                <div className="rounded-[18px] border border-white/10 bg-[#020611]/60 p-2">
+                  <div className="space-y-2">
+                    {zoneLocations.map((location, index) => (
+                      <div
+                        key={location.id}
+                        className={`rounded-[18px] border transition ${
+                          location.id === selectedLocation?.id
+                            ? 'border-orange-300/45 bg-orange-500/10 shadow-[0_0_18px_rgba(245,130,32,0.08)]'
+                            : 'border-white/10 bg-white/[0.025] hover:border-white/16'
+                        }`}
+                      >
+                        <div className="flex items-center gap-2 px-3 py-2.5">
+                          <button
+                            type="button"
+                            onClick={() => setSelectedLocationId(location.id)}
+                            className="min-w-0 flex-1 text-left"
+                          >
+                            <p className="text-[10px] uppercase tracking-[0.18em] text-white/34">Entry {index + 1}</p>
+                            <p className="mt-1 truncate text-sm font-semibold text-white">{location.name}</p>
+                            <p className="mt-1 truncate text-[11px] text-white/40">{location.locationCode || 'Code pending'}</p>
+                          </button>
+                          <button
+                            type="button"
+                            onClick={(event) => {
+                              event.stopPropagation();
+                              deleteLocation(location.id);
+                            }}
+                            className="rounded-xl border border-white/10 bg-[#020611]/72 p-2 text-white/48 transition hover:border-orange-300/35 hover:text-orange-100"
+                            aria-label={`Delete ${location.name}`}
+                          >
+                            <Trash2 size={14} />
+                          </button>
+                        </div>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-3 space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Location Detail</p>
-                {selectedLocation && <div className="rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[10px] uppercase tracking-[0.16em] text-white/48">Selected</div>}
-              </div>
-              {selectedLocation ? (
-                <div className="grid gap-2">
-                  <input value={selectedLocation.name} onChange={(event) => updateSelectedLocation({ name: event.target.value })} placeholder="Location label" className="rounded-xl border border-white/12 bg-[#020611]/80 px-3 py-2 text-sm outline-none focus:border-orange-300" />
-                  <input value={selectedLocation.locationCode} onChange={(event) => updateSelectedLocation({ locationCode: event.target.value })} placeholder="QR location code" className="rounded-xl border border-white/12 bg-[#020611]/80 px-3 py-2 text-sm outline-none focus:border-orange-300" />
-                  <textarea value={selectedLocation.description} onChange={(event) => updateSelectedLocation({ description: event.target.value })} placeholder="Location description shown to admins and scan-side details" rows={3} className="rounded-xl border border-white/12 bg-[#020611]/80 px-3 py-2 text-sm outline-none focus:border-orange-300" />
-                  <textarea value={selectedLocation.riddle} onChange={(event) => updateSelectedLocation({ riddle: event.target.value })} placeholder="Riddle for this location entry" rows={4} className="rounded-xl border border-white/12 bg-[#020611]/80 px-3 py-2 text-sm outline-none focus:border-orange-300" />
                 </div>
-              ) : (
-                <p className="text-sm text-white/50">Select a location entry to edit its code, description, and riddle.</p>
-              )}
+
+                <div className="rounded-[18px] border border-white/10 bg-[#020611]/56 p-4">
+                  {selectedLocation ? (
+                    <div className="space-y-4">
+                      <div className="flex items-start justify-between gap-3">
+                        <div>
+                          <p className="text-[10px] uppercase tracking-[0.22em] text-white/34">Active entry</p>
+                          <h4 className="mt-1 font-display text-lg font-semibold text-white">{selectedLocation.name || 'Unnamed location'}</h4>
+                        </div>
+                        <div className="rounded-full border border-orange-300/18 bg-orange-500/8 px-3 py-1 text-[10px] uppercase tracking-[0.16em] text-orange-100/82">
+                          {selectedZone.name}
+                        </div>
+                      </div>
+
+                      <div className="grid gap-3 sm:grid-cols-2">
+                        <label className="grid gap-2 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                          Label
+                          <input value={selectedLocation.name} onChange={(event) => updateSelectedLocation({ name: event.target.value })} placeholder="Bookshelf east" className="rounded-2xl border border-white/12 bg-[#020611]/84 px-3.5 py-2.5 text-sm normal-case tracking-normal text-white outline-none transition focus:border-orange-300/55" />
+                        </label>
+                        <label className="grid gap-2 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                          QR code
+                          <input value={selectedLocation.locationCode} onChange={(event) => updateSelectedLocation({ locationCode: event.target.value })} placeholder="ZONE-A-03" className="rounded-2xl border border-white/12 bg-[#020611]/84 px-3.5 py-2.5 text-sm normal-case tracking-normal text-white outline-none transition focus:border-orange-300/55" />
+                        </label>
+                      </div>
+
+                      <label className="grid gap-2 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                        Location detail
+                        <textarea value={selectedLocation.description} onChange={(event) => updateSelectedLocation({ description: event.target.value })} placeholder="What the admin and scan side should know." rows={3} className="rounded-2xl border border-white/12 bg-[#020611]/84 px-3.5 py-3 text-sm normal-case tracking-normal text-white outline-none transition focus:border-orange-300/55" />
+                      </label>
+
+                      <label className="grid gap-2 text-[11px] uppercase tracking-[0.18em] text-white/38">
+                        Riddle
+                        <textarea value={selectedLocation.riddle} onChange={(event) => updateSelectedLocation({ riddle: event.target.value })} placeholder="Write the clue hunters will see." rows={5} className="rounded-2xl border border-white/12 bg-[#020611]/84 px-3.5 py-3 text-sm normal-case tracking-normal text-white outline-none transition focus:border-orange-300/55" />
+                      </label>
+                    </div>
+                  ) : (
+                    <div className="grid min-h-[15rem] place-items-center rounded-[18px] border border-dashed border-white/10 bg-[#020611]/44 text-sm text-white/40">
+                      Select a location entry to edit it.
+                    </div>
+                  )}
+                </div>
+              </div>
             </div>
 
-            <div className="rounded-[18px] border border-white/10 bg-white/[0.03] p-3 space-y-3">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Route Sets</p>
+            <div className="rounded-[22px] border border-white/10 bg-white/[0.03] p-3.5">
+              <div className="flex items-center justify-between gap-3">
+                <div>
+                  <p className="text-[10px] uppercase tracking-[0.28em] text-orange-200/72">Route Sets</p>
+                  <p className="mt-1 text-sm text-white/42">Each set is a valid randomized combination for this zone.</p>
+                </div>
                 <BreathButton onClick={addRouteSet} className="px-3 py-1.5 text-[10px]">ADD SET</BreathButton>
               </div>
-              <div className="flex flex-wrap gap-2">
-                {routeSets.map((routeSet) => (
-                  <button
-                    key={routeSet.id}
-                    type="button"
-                    onClick={() => setSelectedRouteSetId(routeSet.id)}
-                    className={`rounded-full border px-3 py-1.5 text-xs uppercase tracking-[0.14em] ${
-                      routeSet.id === selectedRouteSet?.id
-                        ? 'border-orange-300/45 bg-orange-500/12 text-orange-100'
-                        : 'border-white/10 bg-white/[0.03] text-white/56'
-                    }`}
-                  >
-                    {routeSet.name}
-                  </button>
-                ))}
-              </div>
-              {selectedRouteSet ? (
-                <div className="grid gap-2">
-                  <input value={selectedRouteSet.name} onChange={(event) => updateSelectedRouteSet({ name: event.target.value })} placeholder="Set label" className="rounded-xl border border-white/12 bg-[#020611]/80 px-3 py-2 text-sm outline-none focus:border-orange-300" />
-                  <div className="flex flex-wrap gap-2">
-                    {zoneLocations.map((location) => {
-                      const active = selectedRouteSet.locationIds.includes(location.id);
-                      return (
-                        <button
-                          key={location.id}
-                          type="button"
-                          onClick={() => toggleLocationInRouteSet(selectedRouteSet.id, location.id)}
-                          className={`rounded-full border px-3 py-1.5 text-xs tracking-[0.08em] ${
-                            active
-                              ? 'border-emerald-300/45 bg-emerald-500/12 text-emerald-100'
-                              : 'border-white/10 bg-white/[0.03] text-white/56'
-                          }`}
-                        >
-                          {location.name}
-                        </button>
-                      );
-                    })}
-                  </div>
-                  <BreathButton onClick={deleteSelectedRouteSet} className="text-xs">DELETE SET</BreathButton>
+
+              <div className="mt-4 grid gap-3 xl:grid-cols-[minmax(180px,0.62fr)_minmax(0,1.38fr)]">
+                <div className="space-y-2">
+                  {routeSets.map((routeSet) => (
+                    <button
+                      key={routeSet.id}
+                      type="button"
+                      onClick={() => setSelectedRouteSetId(routeSet.id)}
+                      className={`w-full rounded-2xl border px-3 py-3 text-left transition ${
+                        routeSet.id === selectedRouteSet?.id
+                          ? 'border-orange-300/45 bg-orange-500/12 text-orange-100'
+                          : 'border-white/10 bg-[#020611]/48 text-white/56 hover:border-white/18'
+                      }`}
+                    >
+                      <div className="text-[10px] uppercase tracking-[0.18em] text-white/34">Set</div>
+                      <div className="mt-1 text-sm font-semibold">{routeSet.name}</div>
+                    </button>
+                  ))}
                 </div>
-              ) : (
-                <p className="text-sm text-white/50">Each set is a valid randomized combination for this zone.</p>
-              )}
+
+                {selectedRouteSet ? (
+                  <div className="rounded-[18px] border border-white/10 bg-[#020611]/56 p-4">
+                    <div className="grid gap-3">
+                      <input value={selectedRouteSet.name} onChange={(event) => updateSelectedRouteSet({ name: event.target.value })} placeholder="Set label" className="rounded-2xl border border-white/12 bg-[#020611]/84 px-3.5 py-2.5 text-sm text-white outline-none transition focus:border-orange-300/55" />
+                      <div className="flex flex-wrap gap-2">
+                        {zoneLocations.map((location) => {
+                          const active = selectedRouteSet.locationIds.includes(location.id);
+                          return (
+                            <button
+                              key={location.id}
+                              type="button"
+                              onClick={() => toggleLocationInRouteSet(selectedRouteSet.id, location.id)}
+                              className={`rounded-full border px-3 py-1.5 text-xs tracking-[0.08em] transition ${
+                                active
+                                  ? 'border-emerald-300/45 bg-emerald-500/12 text-emerald-100'
+                                  : 'border-white/10 bg-white/[0.03] text-white/56 hover:border-white/18'
+                              }`}
+                            >
+                              {location.name}
+                            </button>
+                          );
+                        })}
+                      </div>
+                      <div className="pt-1">
+                        <BreathButton onClick={deleteSelectedRouteSet} className="text-xs">DELETE SET</BreathButton>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  <div className="grid min-h-[10rem] place-items-center rounded-[18px] border border-dashed border-white/10 bg-[#020611]/44 text-sm text-white/40">
+                    Add a route set to continue.
+                  </div>
+                )}
+              </div>
             </div>
           </div>
         ) : (

@@ -485,44 +485,45 @@ body {
   font-family: 'Pixelify Sans', 'Space Grotesk', sans-serif;
 }
 
-.hero-plasma-frame {
-  position: absolute;
-  inset: 12px;
-  border-radius: 34px;
+.hero-plasma-border-screen {
+  position: fixed;
+  inset: 8px;
+  border-radius: 28px;
   pointer-events: none;
   z-index: 5;
 }
 
-.hero-plasma-frame::before,
-.hero-plasma-frame::after {
+.hero-plasma-border-screen::before,
+.hero-plasma-border-screen::after {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
 }
 
-.hero-plasma-frame::before {
-  border: 1px solid rgba(255, 208, 163, 0.52);
+.hero-plasma-border-screen::before {
+  border: 1px solid rgba(255, 208, 163, 0.66);
   box-shadow:
-    0 0 0 1px rgba(255, 160, 84, 0.28),
-    0 0 26px rgba(255, 128, 42, 0.2),
-    0 0 72px rgba(255, 138, 46, 0.12),
-    inset 0 0 0 1px rgba(255, 240, 220, 0.07);
-  opacity: 0.98;
-  animation: hero-plasma-breathe 4.2s ease-in-out infinite;
+    0 0 0 1px rgba(255, 160, 84, 0.34),
+    0 0 22px rgba(255, 128, 42, 0.24),
+    0 0 62px rgba(255, 138, 46, 0.14),
+    inset 0 0 0 1px rgba(255, 240, 220, 0.1);
+  opacity: 1;
+  animation: hero-plasma-breathe 3.8s ease-in-out infinite;
 }
 
-.hero-plasma-frame::after {
-  inset: -1px;
+.hero-plasma-border-screen::after {
+  inset: -2px;
   border: 1px solid transparent;
   background:
     conic-gradient(from 0deg,
       rgba(255, 120, 38, 0) 0deg,
-      rgba(255, 120, 38, 0) 268deg,
-      rgba(255, 148, 68, 0.18) 292deg,
-      rgba(255, 226, 196, 0.94) 308deg,
-      rgba(255, 152, 70, 0.78) 320deg,
-      rgba(255, 120, 38, 0.12) 338deg,
+      rgba(255, 120, 38, 0) 248deg,
+      rgba(255, 148, 68, 0.18) 272deg,
+      rgba(255, 214, 168, 0.76) 292deg,
+      rgba(255, 236, 210, 0.98) 306deg,
+      rgba(255, 152, 70, 0.82) 322deg,
+      rgba(255, 120, 38, 0.12) 342deg,
       rgba(255, 120, 38, 0) 360deg);
   -webkit-mask:
     linear-gradient(#000 0 0) padding-box,
@@ -532,9 +533,9 @@ body {
     linear-gradient(#000 0 0) padding-box,
     linear-gradient(#000 0 0);
   mask-composite: exclude;
-  filter: blur(8px) saturate(1.28);
-  opacity: 0.96;
-  animation: hero-plasma-stream 4.8s linear infinite, hero-plasma-breathe 4.2s ease-in-out infinite;
+  filter: blur(9px) saturate(1.3);
+  opacity: 1;
+  animation: hero-plasma-stream 5.8s linear infinite, hero-plasma-breathe 3.8s ease-in-out infinite;
 }
 
 @keyframes hero-plasma-breathe {
