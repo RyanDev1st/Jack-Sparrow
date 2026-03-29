@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@import 'tailwindcss';
+
+:root {
+  --space-950: #020611;
+  --space-900: #07142b;
+  --space-800: #142647;
+  --cta-orange: #f58220;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Space Grotesk', 'Segoe UI', sans-serif;
+  background: radial-gradient(1500px 900px at 50% -30%, var(--space-800) 0%, var(--space-900) 45%, var(--space-950) 100%);
+  color: #fff;
+}
