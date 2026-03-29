@@ -16,6 +16,7 @@ function AppContent() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/join" element={<Join />} />
+          <Route path="/scan" element={<Hunt />} />
           <Route path="/hunt" element={<Hunt />} />
           <Route path="/admin" element={<AdminPage />} />
         </Routes>
