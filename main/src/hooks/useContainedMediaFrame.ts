@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 
 type Frame = { left: number; top: number; width: number; height: number };
+type ContainerSize = { width: number; height: number };
 
 const fullFrame: Frame = { left: 0, top: 0, width: 100, height: 100 };
+const emptySize: ContainerSize = { width: 0, height: 0 };
 
 export function useContainedMediaFrame() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const [ratio, setRatio] = useState<number | null>(null);
   const [frame, setFrame] = useState<Frame>(fullFrame);
+  const [containerSize, setContainerSize] = useState<ContainerSize>(emptySize);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -15,6 +18,7 @@ export function useContainedMediaFrame() {
 
     const update = () => {
       const rect = container.getBoundingClientRect();
+      setContainerSize({ width: rect.width, height: rect.height });
       if (!ratio || rect.width <= 0 || rect.height <= 0) {
         setFrame(fullFrame);
         return;
@@ -49,5 +53,5 @@ export function useContainedMediaFrame() {
     setRatio(img.naturalWidth / img.naturalHeight);
   };
 
-  return { containerRef, frame, onImageLoad };
+  return { containerRef, frame, containerSize, onImageLoad };
 }
