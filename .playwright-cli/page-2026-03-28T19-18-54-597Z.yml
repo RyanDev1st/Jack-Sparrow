@@ -1,0 +1,33 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic:
+        - img
+        - generic:
+          - generic:
+            - generic:
+              - paragraph: I see everything from up here!
+      - generic [ref=e167] [cursor=pointer]:
+        - generic [ref=e168]:
+          - button "Start treasure hunt" [ref=e169]
+          - img [ref=e172]
+        - generic [ref=e174]:
+          - generic [ref=e175]: Start
+          - generic [ref=e176]: Begin your hunt
+        - generic [ref=e177]:
+          - generic [ref=e178]: TAP
+          - img [ref=e179]
+      - generic [ref=e181]:
+        - img [ref=e185]
+        - generic [ref=e188]: Solve
+      - generic [ref=e189]:
+        - img [ref=e193]
+        - generic [ref=e197]: Explore
+      - generic [ref=e198]:
+        - img [ref=e202]
+        - generic [ref=e209]: Scan
+      - generic [ref=e210]:
+        - img [ref=e214]
+        - generic [ref=e221]: Claim
+    - contentinfo:
+      - paragraph: Tap the Start node to begin

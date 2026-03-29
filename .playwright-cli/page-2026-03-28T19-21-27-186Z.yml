@@ -1,0 +1,18 @@
+- main [ref=e3]:
+  - generic [ref=e10]:
+    - paragraph [ref=e11]: Admin Access
+    - heading "Enter 4-Digit PIN" [level=1] [ref=e12]
+    - generic [ref=e13]: "****"
+    - generic [ref=e14]:
+      - button "1" [ref=e15]
+      - button "2" [ref=e16]
+      - button "3" [ref=e17]
+      - button "4" [ref=e18]
+      - button "5" [ref=e19]
+      - button "6" [ref=e20]
+      - button "7" [ref=e21]
+      - button "8" [ref=e22]
+      - button "9" [ref=e23]
+      - button "<" [ref=e24]
+      - button "0" [ref=e25]
+      - button "C" [ref=e26]

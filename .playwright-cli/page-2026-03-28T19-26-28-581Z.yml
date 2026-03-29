@@ -1,0 +1,63 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: Castlevania Treasure Hunt
+        - heading "Zone Confirmation" [level=1] [ref=e13]
+        - paragraph [ref=e14]: Confirm treasures with the scanner, resolve the remaining riddles, then carry the finished mantra to check-in.
+      - generic [ref=e15]:
+        - generic [ref=e16]: SessionLive
+        - generic [ref=e17]: Check-inPending
+        - generic [ref=e18]: Solved0/1
+    - generic [ref=e23]:
+      - generic [ref=e24]:
+        - generic [ref=e25]:
+          - paragraph [ref=e26]: Section 01
+          - generic [ref=e27]:
+            - heading "Scanner" [level=2] [ref=e28]
+            - paragraph [ref=e29]: Use the live scanner or manual snap to confirm a treasure once the riddle and map line up.
+        - generic [ref=e31]:
+          - generic [ref=e32]: StatusHunt active
+          - generic [ref=e33]: MantraHAN-M40B
+      - generic [ref=e35]:
+        - generic [ref=e39]:
+          - generic: idle | none
+          - generic:
+            - generic: LIVE SPEED
+            - generic: RECOVERING • -- fps
+          - generic: Align code in center to maximize scan speed
+        - generic [ref=e42]:
+          - generic [ref=e43]:
+            - img [ref=e44]
+            - paragraph [ref=e51]: Live frame
+            - paragraph [ref=e52]: Keep the location QR centered for the fastest decode path.
+          - generic [ref=e53]:
+            - img [ref=e54]
+            - paragraph [ref=e56]: Manual fallback
+            - paragraph [ref=e57]: Use manual snap when glare, distance, or angle breaks the camera read.
+          - generic [ref=e58]:
+            - img [ref=e59]
+            - paragraph [ref=e62]: Strict validation
+            - paragraph [ref=e63]: Only raw location codes assigned to this mantra count toward completion.
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: Fanpages
+        - link "Instagram" [ref=e68] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e69] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e70] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e73]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."
+  - navigation "Treasure hunt sections" [ref=e74]:
+    - button "Scan" [ref=e75]:
+      - img [ref=e76]
+      - generic [ref=e83]: Scan
+    - button "Map" [ref=e84]:
+      - img [ref=e85]
+      - generic [ref=e89]: Map
+    - button "Progress" [ref=e90]:
+      - img [ref=e91]
+      - generic [ref=e94]: Progress

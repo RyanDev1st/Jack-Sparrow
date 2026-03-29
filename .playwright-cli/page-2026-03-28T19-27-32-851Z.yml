@@ -1,0 +1,76 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: Castlevania Treasure Hunt
+        - heading "Zone Confirmation" [level=1] [ref=e13]
+        - paragraph [ref=e14]: Confirm treasures with the scanner, resolve the remaining riddles, then carry the finished mantra to check-in.
+      - generic [ref=e15]:
+        - generic [ref=e16]: SessionLive
+        - generic [ref=e17]: Check-inPending
+        - generic [ref=e18]: Solved0/1
+    - generic [ref=e122]:
+      - generic [ref=e123]:
+        - generic [ref=e124]:
+          - paragraph [ref=e125]: Section 03
+          - generic [ref=e126]:
+            - heading "Progress + Notices" [level=2] [ref=e127]
+            - paragraph [ref=e128]: Track what is solved, what remains, and what the scanner is telling you right now.
+        - button "END HUNT" [ref=e130]:
+          - generic [ref=e131]: END HUNT
+      - generic [ref=e133]:
+        - generic [ref=e135]:
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Live mantra
+            - paragraph [ref=e138]: HAN-M40B
+            - paragraph [ref=e139]: "Hear Astral Nebula Below Echoes #M40B"
+          - generic [ref=e140]:
+            - paragraph [ref=e141]: Completion
+            - paragraph [ref=e142]: 0/1
+        - generic [ref=e145]:
+          - generic [ref=e146]:
+            - img [ref=e147]
+            - paragraph [ref=e150]: Latest notice
+          - paragraph [ref=e151]: Mantra generated.
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - generic [ref=e154]:
+              - img [ref=e155]
+              - paragraph [ref=e158]: Solved
+            - paragraph [ref=e159]: "0"
+            - paragraph [ref=e161]: No treasures verified yet.
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - paragraph [ref=e167]: Remaining
+            - paragraph [ref=e168]: "1"
+            - generic [ref=e170]: Zone 1
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - img [ref=e173]
+            - paragraph [ref=e176]: Notification Log
+          - generic [ref=e178]:
+            - paragraph [ref=e179]: Hunt sheet ready
+            - paragraph [ref=e180]: Mantra generated.
+    - generic [ref=e65]:
+      - generic [ref=e66]:
+        - generic [ref=e67]: Fanpages
+        - link "Instagram" [ref=e68] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e69] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e70] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e71]:
+        - paragraph [ref=e72]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e73]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."
+  - navigation "Treasure hunt sections" [ref=e74]:
+    - button "Scan" [ref=e75]:
+      - img [ref=e76]
+      - generic [ref=e83]: Scan
+    - button "Map" [ref=e84]:
+      - img [ref=e85]
+      - generic [ref=e89]: Map
+    - button "Progress" [active] [ref=e90]:
+      - img [ref=e91]
+      - generic [ref=e94]: Progress

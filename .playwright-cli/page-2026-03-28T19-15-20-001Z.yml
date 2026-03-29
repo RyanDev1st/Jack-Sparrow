@@ -1,0 +1,135 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - paragraph [ref=e29]: Castlevania Treasure Hunt
+        - heading "Zone Confirmation" [level=1] [ref=e30]
+        - paragraph [ref=e31]: Confirm treasures with the scanner, resolve the remaining riddles, then carry the finished mantra to check-in.
+      - generic [ref=e32]:
+        - generic [ref=e33]: SessionLive
+        - generic [ref=e34]: Check-inPending
+        - generic [ref=e35]: Solved0/2
+    - generic [ref=e36]:
+      - generic [ref=e39]:
+        - generic [ref=e40]:
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Section 01
+            - generic [ref=e43]:
+              - heading "Scanner" [level=2] [ref=e44]
+              - paragraph [ref=e45]: Use the live scanner or manual snap to confirm a treasure once the riddle and map line up.
+          - generic [ref=e47]:
+            - generic [ref=e48]: StatusHunt active
+            - generic [ref=e49]: MantraUAV-UXT6
+        - generic [ref=e51]:
+          - generic [ref=e55]:
+            - generic: scanning | DroidCam Video
+            - generic:
+              - generic: LIVE SPEED
+              - generic: RECOVERING • 4 fps
+            - generic: Align code in center to maximize scan speed
+            - button "Manual Snap" [ref=e59]
+          - generic [ref=e60]:
+            - generic [ref=e61]:
+              - img [ref=e62]
+              - paragraph [ref=e69]: Live frame
+              - paragraph [ref=e70]: Keep the location QR centered for the fastest decode path.
+            - generic [ref=e71]:
+              - img [ref=e72]
+              - paragraph [ref=e74]: Manual fallback
+              - paragraph [ref=e75]: Use manual snap when glare, distance, or angle breaks the camera read.
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - paragraph [ref=e80]: Strict validation
+              - paragraph [ref=e81]: Only raw location codes assigned to this mantra count toward completion.
+      - generic [ref=e84]:
+        - generic [ref=e86]:
+          - paragraph [ref=e87]: Section 02
+          - generic [ref=e88]:
+            - heading "Map + Riddles" [level=2] [ref=e89]
+            - paragraph [ref=e90]: Cross-reference your assigned zones with the remaining clues. Solve first, scan second.
+        - generic [ref=e92]:
+          - button "1 2" [ref=e94]:
+            - generic [ref=e95]:
+              - img [ref=e96]
+              - generic [ref=e97]:
+                - generic:
+                  - generic: "1"
+              - generic [ref=e98]:
+                - generic:
+                  - generic: "2"
+          - generic [ref=e99]:
+            - generic [ref=e100]:
+              - generic [ref=e101]:
+                - generic [ref=e102]:
+                  - paragraph [ref=e103]: Riddle 1
+                  - paragraph [ref=e104]: Zone 1
+                - generic [ref=e105]: reeee
+              - paragraph [ref=e107]:
+                - text: it is tree
+                - generic [ref=e108]: Orange
+            - generic [ref=e109]:
+              - generic [ref=e110]:
+                - generic [ref=e111]:
+                  - paragraph [ref=e112]: Riddle 2
+                  - paragraph [ref=e113]: Zone 2
+                - generic [ref=e114]: node_5
+              - paragraph [ref=e116]:
+                - text: it is
+                - generic [ref=e117]: Blue
+      - generic [ref=e120]:
+        - generic [ref=e121]:
+          - generic [ref=e122]:
+            - paragraph [ref=e123]: Section 03
+            - generic [ref=e124]:
+              - heading "Progress + Notices" [level=2] [ref=e125]
+              - paragraph [ref=e126]: Track what is solved, what remains, and what the scanner is telling you right now.
+          - button "END HUNT" [ref=e128]:
+            - generic [ref=e129]: END HUNT
+        - generic [ref=e131]:
+          - generic [ref=e133]:
+            - generic [ref=e134]:
+              - paragraph [ref=e135]: Live mantra
+              - paragraph [ref=e136]: UAV-UXT6
+              - paragraph [ref=e137]: "Unveil Astral Void Above Light #UXT6"
+            - generic [ref=e138]:
+              - paragraph [ref=e139]: Completion
+              - paragraph [ref=e140]: 0/2
+          - generic [ref=e143]:
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - paragraph [ref=e148]: Latest notice
+            - paragraph [ref=e149]: Mantra generated.
+          - generic [ref=e150]:
+            - generic [ref=e151]:
+              - generic [ref=e152]:
+                - img [ref=e153]
+                - paragraph [ref=e156]: Solved
+              - paragraph [ref=e157]: "0"
+              - paragraph [ref=e159]: No treasures verified yet.
+            - generic [ref=e160]:
+              - generic [ref=e161]:
+                - img [ref=e162]
+                - paragraph [ref=e165]: Remaining
+              - paragraph [ref=e166]: "2"
+              - generic [ref=e167]:
+                - generic [ref=e168]: Zone 1
+                - generic [ref=e169]: Zone 2
+          - generic [ref=e170]:
+            - generic [ref=e171]:
+              - img [ref=e172]
+              - paragraph [ref=e175]: Notification Log
+            - generic [ref=e177]:
+              - paragraph [ref=e178]: Hunt sheet ready
+              - paragraph [ref=e179]: Mantra generated.
+    - generic [ref=e181]:
+      - generic [ref=e182]:
+        - generic [ref=e183]: Fanpages
+        - link "Instagram" [ref=e184] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e185] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e186] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e187]:
+        - paragraph [ref=e188]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e189]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."

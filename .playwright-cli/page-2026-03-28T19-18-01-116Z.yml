@@ -1,0 +1,118 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: Castlevania Treasure Hunt
+        - heading "Zone Confirmation" [level=1] [ref=e13]
+        - paragraph [ref=e14]: Confirm treasures with the scanner, resolve the remaining riddles, then carry the finished mantra to check-in.
+      - generic [ref=e15]:
+        - generic [ref=e16]: SessionLive
+        - generic [ref=e17]: Check-inPending
+        - generic [ref=e18]: Solved0/1
+    - generic [ref=e19]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - paragraph [ref=e25]: Section 01
+            - generic [ref=e26]:
+              - heading "Scanner" [level=2] [ref=e27]
+              - paragraph [ref=e28]: Use the live scanner or manual snap to confirm a treasure once the riddle and map line up.
+          - generic [ref=e30]:
+            - generic [ref=e31]: StatusHunt active
+            - generic [ref=e32]: MantraCHR-WHPU
+        - generic [ref=e34]:
+          - generic [ref=e38]:
+            - generic: scanning | Integrated Camera (04f2:b7b8)
+            - generic:
+              - generic: LIVE SPEED
+              - generic: RECOVERING • 3 fps
+            - generic: Align code in center to maximize scan speed
+            - button "Manual Snap" [ref=e42]
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - img [ref=e45]
+              - paragraph [ref=e52]: Live frame
+              - paragraph [ref=e53]: Keep the location QR centered for the fastest decode path.
+            - generic [ref=e54]:
+              - img [ref=e55]
+              - paragraph [ref=e57]: Manual fallback
+              - paragraph [ref=e58]: Use manual snap when glare, distance, or angle breaks the camera read.
+            - generic [ref=e59]:
+              - img [ref=e60]
+              - paragraph [ref=e63]: Strict validation
+              - paragraph [ref=e64]: Only raw location codes assigned to this mantra count toward completion.
+      - generic [ref=e67]:
+        - generic [ref=e69]:
+          - paragraph [ref=e70]: Section 02
+          - generic [ref=e71]:
+            - heading "Map + Riddles" [level=2] [ref=e72]
+            - paragraph [ref=e73]: Cross-reference your assigned zones with the remaining clues. Solve first, scan second.
+        - generic [ref=e75]:
+          - button "1" [ref=e77]:
+            - generic [ref=e78]:
+              - img [ref=e79]
+              - generic [ref=e80]:
+                - generic:
+                  - generic: "1"
+          - generic [ref=e82]:
+            - generic [ref=e83]:
+              - generic [ref=e84]:
+                - paragraph [ref=e85]: Riddle 1
+                - paragraph [ref=e86]: Zone 1
+              - generic [ref=e87]: ae
+            - paragraph [ref=e89]: No riddle provided for this zone.
+      - generic [ref=e92]:
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - paragraph [ref=e95]: Section 03
+            - generic [ref=e96]:
+              - heading "Progress + Notices" [level=2] [ref=e97]
+              - paragraph [ref=e98]: Track what is solved, what remains, and what the scanner is telling you right now.
+          - button "END HUNT" [ref=e100]:
+            - generic [ref=e101]: END HUNT
+        - generic [ref=e103]:
+          - generic [ref=e105]:
+            - generic [ref=e106]:
+              - paragraph [ref=e107]: Live mantra
+              - paragraph [ref=e108]: CHR-WHPU
+              - paragraph [ref=e109]: "Capture Hidden Realm Through Time #WHPU"
+            - generic [ref=e110]:
+              - paragraph [ref=e111]: Completion
+              - paragraph [ref=e112]: 0/1
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - img [ref=e117]
+              - paragraph [ref=e120]: Latest notice
+            - paragraph [ref=e121]: Mantra generated.
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - generic [ref=e124]:
+                - img [ref=e125]
+                - paragraph [ref=e128]: Solved
+              - paragraph [ref=e129]: "0"
+              - paragraph [ref=e131]: No treasures verified yet.
+            - generic [ref=e132]:
+              - generic [ref=e133]:
+                - img [ref=e134]
+                - paragraph [ref=e137]: Remaining
+              - paragraph [ref=e138]: "1"
+              - generic [ref=e140]: Zone 1
+          - generic [ref=e141]:
+            - generic [ref=e142]:
+              - img [ref=e143]
+              - paragraph [ref=e146]: Notification Log
+            - generic [ref=e148]:
+              - paragraph [ref=e149]: Hunt sheet ready
+              - paragraph [ref=e150]: Mantra generated.
+    - generic [ref=e152]:
+      - generic [ref=e153]:
+        - generic [ref=e154]: Fanpages
+        - link "Instagram" [ref=e155] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e156] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e157] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e158]:
+        - paragraph [ref=e159]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e160]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."

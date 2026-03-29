@@ -1,0 +1,20 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - img [ref=e11]
+      - paragraph [ref=e13]: Treasure Hunt
+      - heading "Preparing Your Hunt Sheet" [level=1] [ref=e14]
+      - paragraph [ref=e15]: The scanner, assigned map, and progress desk are being loaded into a live session.
+      - paragraph [ref=e17]: Preparing your hunt sheet...
+    - generic [ref=e18]:
+      - generic [ref=e19]:
+        - generic [ref=e20]: Fanpages
+        - link "Instagram" [ref=e21] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e22] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e23] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e24]:
+        - paragraph [ref=e25]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e26]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."

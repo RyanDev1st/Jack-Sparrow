@@ -1,0 +1,29 @@
+- generic [ref=e2]:
+  - generic:
+    - generic:
+      - generic [ref=e9] [cursor=pointer]:
+        - generic [ref=e10]:
+          - button "Start treasure hunt" [ref=e11]
+          - img [ref=e14]
+        - generic [ref=e16]:
+          - generic [ref=e17]: Start
+          - generic [ref=e18]: Begin your hunt
+        - generic [ref=e19]:
+          - generic [ref=e20]: TAP
+          - img [ref=e21]
+      - generic [ref=e23]:
+        - img [ref=e27]
+        - generic [ref=e30]: Solve
+      - generic [ref=e31]:
+        - img [ref=e35]
+        - generic [ref=e39]: Explore
+      - generic [ref=e40]:
+        - img [ref=e44]
+        - generic [ref=e51]: Scan
+      - generic [ref=e52]:
+        - img [ref=e56]
+        - generic [ref=e63]: Claim
+    - generic:
+      - paragraph: Summoning the Orb...
+    - contentinfo:
+      - paragraph: Tap the Start node to begin

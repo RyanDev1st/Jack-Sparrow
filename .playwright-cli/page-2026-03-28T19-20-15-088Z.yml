@@ -1,0 +1,130 @@
+- main [ref=e3]:
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - paragraph [ref=e12]: Castlevania Treasure Hunt
+        - heading "Zone Confirmation" [level=1] [ref=e13]
+        - paragraph [ref=e14]: Confirm treasures with the scanner, resolve the remaining riddles, then carry the finished mantra to check-in.
+      - generic [ref=e15]:
+        - generic [ref=e16]: SessionLive
+        - generic [ref=e17]: Check-inPending
+        - generic [ref=e18]: Solved0/2
+    - generic [ref=e19]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic [ref=e24]:
+            - paragraph [ref=e25]: Section 01
+            - generic [ref=e26]:
+              - heading "Scanner" [level=2] [ref=e27]
+              - paragraph [ref=e28]: Use the live scanner or manual snap to confirm a treasure once the riddle and map line up.
+          - generic [ref=e30]:
+            - generic [ref=e31]: StatusHunt active
+            - generic [ref=e32]: MantraDSV-HR21
+        - generic [ref=e34]:
+          - generic [ref=e38]:
+            - generic: idle | none
+            - generic:
+              - generic: LIVE SPEED
+              - generic: RECOVERING • -- fps
+            - generic: Align code in center to maximize scan speed
+          - generic [ref=e41]:
+            - generic [ref=e42]:
+              - img [ref=e43]
+              - paragraph [ref=e50]: Live frame
+              - paragraph [ref=e51]: Keep the location QR centered for the fastest decode path.
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - paragraph [ref=e55]: Manual fallback
+              - paragraph [ref=e56]: Use manual snap when glare, distance, or angle breaks the camera read.
+            - generic [ref=e57]:
+              - img [ref=e58]
+              - paragraph [ref=e61]: Strict validation
+              - paragraph [ref=e62]: Only raw location codes assigned to this mantra count toward completion.
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - paragraph [ref=e68]: Section 02
+          - generic [ref=e69]:
+            - heading "Map + Riddles" [level=2] [ref=e70]
+            - paragraph [ref=e71]: Cross-reference your assigned zones with the remaining clues. Solve first, scan second.
+        - generic [ref=e73]:
+          - button "1 2" [ref=e75]:
+            - generic [ref=e76]:
+              - img [ref=e77]
+              - generic [ref=e78]:
+                - generic:
+                  - generic: "1"
+              - generic [ref=e79]:
+                - generic:
+                  - generic: "2"
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]:
+                - generic [ref=e83]:
+                  - paragraph [ref=e84]: Riddle 1
+                  - paragraph [ref=e85]: Zone2
+                - generic [ref=e86]: node_01
+              - paragraph [ref=e88]: No riddle provided for this zone.
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91]:
+                  - paragraph [ref=e92]: Riddle 2
+                  - paragraph [ref=e93]: Zone 3
+                - generic [ref=e94]: node_2
+              - paragraph [ref=e96]: No riddle provided for this zone.
+      - generic [ref=e99]:
+        - generic [ref=e100]:
+          - generic [ref=e101]:
+            - paragraph [ref=e102]: Section 03
+            - generic [ref=e103]:
+              - heading "Progress + Notices" [level=2] [ref=e104]
+              - paragraph [ref=e105]: Track what is solved, what remains, and what the scanner is telling you right now.
+          - button "END HUNT" [ref=e107]:
+            - generic [ref=e108]: END HUNT
+        - generic [ref=e110]:
+          - generic [ref=e112]:
+            - generic [ref=e113]:
+              - paragraph [ref=e114]: Live mantra
+              - paragraph [ref=e115]: DSV-HR21
+              - paragraph [ref=e116]: "Discover Sunken Void Past Shadows #HR21"
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: Completion
+              - paragraph [ref=e119]: 0/2
+          - generic [ref=e122]:
+            - generic [ref=e123]:
+              - img [ref=e124]
+              - paragraph [ref=e127]: Latest notice
+            - paragraph [ref=e128]: Mantra generated.
+          - generic [ref=e129]:
+            - generic [ref=e130]:
+              - generic [ref=e131]:
+                - img [ref=e132]
+                - paragraph [ref=e135]: Solved
+              - paragraph [ref=e136]: "0"
+              - paragraph [ref=e138]: No treasures verified yet.
+            - generic [ref=e139]:
+              - generic [ref=e140]:
+                - img [ref=e141]
+                - paragraph [ref=e144]: Remaining
+              - paragraph [ref=e145]: "2"
+              - generic [ref=e146]:
+                - generic [ref=e147]: Zone2
+                - generic [ref=e148]: Zone 3
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - img [ref=e151]
+              - paragraph [ref=e154]: Notification Log
+            - generic [ref=e156]:
+              - paragraph [ref=e157]: Hunt sheet ready
+              - paragraph [ref=e158]: Mantra generated.
+    - generic [ref=e160]:
+      - generic [ref=e161]:
+        - generic [ref=e162]: Fanpages
+        - link "Instagram" [ref=e163] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e164] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e165] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e166]:
+        - paragraph [ref=e167]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e168]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."

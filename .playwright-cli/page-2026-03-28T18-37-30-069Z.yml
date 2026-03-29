@@ -1,0 +1,58 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - img
+  - generic [ref=e9]:
+    - generic [ref=e29]:
+      - generic [ref=e30]: Live Scanner Active
+      - generic [ref=e33]:
+        - generic: error | none
+        - generic:
+          - generic: LIVE SPEED
+          - generic: RECOVERING • -- fps
+        - generic: Align code in center to maximize scan speed
+        - button "Manual Snap" [ref=e37]
+        - generic:
+          - generic: "!"
+        - generic [ref=e38]:
+          - paragraph [ref=e39]: Camera permission denied. Allow camera access in browser settings, then retry.
+          - generic [ref=e40]:
+            - button "Retry Scanner" [ref=e41]
+            - button "Manual Snap" [ref=e42]
+    - generic [ref=e43]:
+      - paragraph [ref=e44]: Hunter State
+      - paragraph [ref=e46]: USG-3IMQ
+      - paragraph [ref=e47]: "Unlock Silent Gate Across Waves #3IMQ"
+      - generic [ref=e48]:
+        - paragraph [ref=e49]: Assigned Map
+        - button "1 2" [ref=e50]:
+          - generic [ref=e51]:
+            - img [ref=e52]
+            - generic [ref=e53]:
+              - generic:
+                - generic: "1"
+            - generic [ref=e54]:
+              - generic:
+                - generic: "2"
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Status
+          - generic [ref=e58]: HUNTING
+        - generic [ref=e59]:
+          - generic [ref=e60]: Progress
+          - generic [ref=e61]: 0/2
+      - generic [ref=e63]: Mantra generated.
+      - button "END SESSION" [ref=e64]:
+        - generic [ref=e65]: END SESSION
+      - paragraph [ref=e66]: For safety, URL-like QR content is ignored. Only raw location codes are accepted.
+  - generic [ref=e68]:
+    - generic [ref=e69]:
+      - generic [ref=e70]: Fanpages
+      - link "Instagram" [ref=e71] [cursor=pointer]:
+        - /url: https://www.instagram.com
+      - link "Facebook" [ref=e72] [cursor=pointer]:
+        - /url: https://www.facebook.com
+      - link "X" [ref=e73] [cursor=pointer]:
+        - /url: https://x.com
+    - generic [ref=e74]:
+      - paragraph [ref=e75]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+      - paragraph [ref=e76]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."

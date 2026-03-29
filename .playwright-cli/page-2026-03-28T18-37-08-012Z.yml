@@ -1,0 +1,26 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - img
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - img "Castlevania Crest" [ref=e12]
+        - generic [ref=e13]:
+          - paragraph [ref=e14]: Treasure Hunt
+          - heading "Castlevania Treasure Hunt" [level=1] [ref=e15]
+          - paragraph [ref=e16]: Solve the riddles, find the treasures, then scan the QR codes.
+      - button "START NOW" [ref=e17]:
+        - generic [ref=e18]: START NOW
+      - paragraph [ref=e19]: Scan a valid node to begin validation.
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Fanpages
+        - link "Instagram" [ref=e23] [cursor=pointer]:
+          - /url: https://www.instagram.com
+        - link "Facebook" [ref=e24] [cursor=pointer]:
+          - /url: https://www.facebook.com
+        - link "X" [ref=e25] [cursor=pointer]:
+          - /url: https://x.com
+      - generic [ref=e26]:
+        - paragraph [ref=e27]: "Terms of Service: No compromise attempts, no copyright infringement, no unauthorized copying, no cyber attacks, no abuse of scanners, APIs, or admin tools."
+        - paragraph [ref=e28]: "Privacy: Device/browser/session identifiers are used for anti-fraud, claim audit, and event security only. Data is retained only for operational and integrity checks."
